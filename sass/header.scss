@@ -1,0 +1,109 @@
+.header {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 24px;
+    }
+    @media (min-width: 1300px) {
+        padding-top: 54px;
+    }
+}
+
+.header__top {
+    display: flex;
+    flex-wrap: wrap;
+    height: 65px;
+    align-items: center;
+    @media (min-width: 768px) {
+        width: 25%;
+    }
+}
+
+.header__logo {
+    width: 66%;
+    @media (min-width: 768px) {
+        width: 100%;
+    } // &
+}
+
+.header__mobile-menu {
+    margin-left: auto;
+    border: none;
+    background: none;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.header__menu {
+    margin: 0 -20px;
+    display: block;
+    width: 320px;
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+        width: auto;
+        margin-left: auto;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+        @media (min-width: 768px) {
+            display: flex;
+        }
+        li {
+            border-bottom: 1px solid #e6e6e6;
+            &:first-child {
+                border-top: 1px solid #e6e6e6;
+                @media (min-width: 768px) {
+                    border-top: none;
+                }
+            }
+            @media (min-width: 768px) {
+                padding: 0 18px;
+                border-bottom: none;
+            }
+        }
+        a {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 65px;
+            text-transform: uppercase;
+            color: #111111;
+            text-decoration: none;
+            @media (min-width: 768px) {
+                color: #222222;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            @media (min-width: 1300px) {
+                color: #ffffff;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.header__image-logo {
+    display: none;
+    &--mobile {
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+    &--table {
+        @media (min-width: 768px) and (max-width: 1300px) {
+            display: block;
+        }
+    }
+    &--desktop {
+        @media (min-width: 1300px) {
+            display: block;
+        }
+    }
+}

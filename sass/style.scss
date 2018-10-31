@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/oswaldregular.woff2"), url("../fonts/oswaldregular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/oswaldmedium.woff2"), url("../fonts/oswaldmedium.woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    font-family: "Oswald", "Arial";
+    margin: 0;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+@import "visibility-hidden.scss";
+@import "container.scss";
+@import "button.scss";
+@import "header.scss";
+@import "food.scss";
